@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    display: grid;
+    grid-template-columns: 1fr 5fr;
+    grid-template-rows:  1fr 6fr;
+    grid-template-areas: 
+    "sidebar header"
+    "sidebar main"
+    ;
+    width: 100vw;
+    height: 100vh;
+    font-family: "Roboto";
+}
+
+.sidebar {
+    grid-area: sidebar;
+    border: 1px solid black;
+    grid-auto-rows: max-content;
+    grid-template-columns: 1fr;
+    gap: 50px;
+    font-size: large;
+    background-color: #020617;
+    color: #f1f5f9;
+}
+
+
+ul {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px
+}
+
+h1, ul {
+    list-style: none;
+    padding: 20px
+}
+
+span {
+    margin-right: 20px;
+}
+
+
+.header {
+    grid-area: header;
+    border: 1px solid red;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 100px;
+
+}
+
+
+.upper {
+    border: 10px solid black;
+    display: grid;
+    grid-template-rows: 1fr;
+    grid-template-columns: 2fr 1fr;
+}
+
+
+.searchbar {
+    border: 1px solid red;
+    align-self: center;
+}
+
+
+.profile {
+    border: 1px solid red;
+    align-self: center;
+}
+
+button {
+    outline: none;
+    background-color: #e2e8f0;
+    color: red;
+    cursor: pointer;
+    border: none;
+    
+}
+
+
+
+
+.main {
+    grid-area: main;
+    border: 1px solid black;
+}
+
+
